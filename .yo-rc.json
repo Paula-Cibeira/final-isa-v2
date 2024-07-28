@@ -1,0 +1,20 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "baseName": "bootifulmusic",
+    "databaseType": "neo4j",
+    "devDatabaseType": "neo4j",
+    "devServerPort": 4200,
+    "enableHibernateCache": false,
+    "entities": ["Artist", "Genre", "Track", "Album"],
+    "jhipsterVersion": "8.6.0",
+    "jwtSecretKey": "YTE1NTRkN2UwODg0MTI4ZDEzOTdhZGVjMGMwNTA1M2Q1NzMyZmQ1MzA1ZGNkMzE3MTg0NDFjMTg5NjcxOWE4NzkxYWNkMTBmYmU2YWMyNmFiYWY5NTA0Y2QxNmM3ZTJlZTI2YTg1YTI5Y2JiMzNlM2VlNmUzMTY4NTc1ZWRiZmQ=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1722205032000,
+    "nativeLanguage": "en",
+    "packageFolder": "com/jhipster/demo/bootifulmusic",
+    "packageName": "com.jhipster.demo.bootifulmusic",
+    "prodDatabaseType": "neo4j",
+    "testFrameworks": ["cypress"]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "annotations": {
+    "changelogDate": "20240728221612"
+  },
+  "applications": ["bootifulmusic"],
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Track",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "album",
+      "otherEntityRelationshipName": "track",
+      "relationshipName": "album",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

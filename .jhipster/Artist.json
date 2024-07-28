@@ -1,0 +1,17 @@
+{
+  "annotations": {
+    "changelogDate": "20240728221412"
+  },
+  "applications": ["bootifulmusic"],
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Artist",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no"
+}
