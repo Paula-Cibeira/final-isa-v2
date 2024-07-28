@@ -5,6 +5,7 @@ import static com.jhipster.demo.bootifulmusic.domain.ArtistTestSamples.*;
 import static com.jhipster.demo.bootifulmusic.domain.GenreTestSamples.*;
 import static com.jhipster.demo.bootifulmusic.domain.TrackTestSamples.*;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.jhipster.demo.bootifulmusic.web.rest.TestUtil;
 import java.util.HashSet;
@@ -12,6 +13,29 @@ import java.util.Set;
 import org.junit.jupiter.api.Test;
 
 class AlbumTest {
+
+    // Testeando creación de álbum
+    @Test
+    public void testAlbumCreation() {
+        Album album = new Album();
+        album.setId("1");
+        album.setName("Parachutes");
+
+        assertEquals(album.getId(), "1");
+        assertEquals(album.getName(), "Parachutes");
+    }
+
+    //Testeando setear artista
+    @Test
+    public void testSetGetArtist() {
+        Album album = new Album();
+        Artist artist = new Artist();
+        artist.setName("Coldplay");
+
+        album.setArtist(artist);
+
+        assertEquals(album.getArtist().getName(), "Coldplay");
+    }
 
     @Test
     void equalsVerifier() throws Exception {
